@@ -1,0 +1,50 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: white;
+}
+body {
+    margin: 0;
+    height: 3000px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+}
+
+ul {
+    width : 1024px;
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    margin:auto;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active1, .active2) {
+    background-color: #4d4c4c;
+}
+.active1 {
+    background-color: hsl(100, 60%, 30%);
+}
+.active2 {
+    background-color: #448ada;
+}
+/* [nav] : 메뉴부분을 감싸는 태그로 [Block]태그 중 하나 */
+
+/* [nav]를 부모로 두고 fixed를 주어서 전체라인을 고정시키고
+   [ul]의 width를 고정값과 margin:auto를 주어 항상 사운데로 정렬
+ */

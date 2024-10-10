@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- [system-ui] 사용자 운영체제에 적용된 폰트를 보여줌 -->
+
+    <!--** [link]를 이용한 방법
+         * [style] 외부에서 사용
+         * <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+           
+        ** [@import]를 이용한 방법
+         * [style] 내부에서 사용
+         * @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap')
+    -->
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+      .para{
+        font-family: 'Noto Sans KR', sans-serif;
+        /* 'Noto Sans KR'같이 이름에 공백 또는 특수문자가 있을 경우 ('',"")로 묶어줘야함 */
+        font-optical-sizing: auto;
+        /* [font-optical-sizing]: 텍스트 크기에 따라 글자 모양 최적화*/
+        font-weight: 700;
+        /* font-size: normal; */
+      }
+    </style>
+
+</head>
+<body>
+  <p class="para">레드향과 한라봉은 비타민C와 P가 풍부합니다.</p>
+</body>
+</html>

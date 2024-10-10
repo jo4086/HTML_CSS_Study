@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** [html]로 문서 전체의 폰트 사이즈를 30px로 맞춤
+          * [em]: 부모태그 기준 (해당 태그를 감싸는 태그 기준)으로 n배
+          * [rem]: [html]문서의 폰트사이즈 기준으로 n배
+          
+          * [html]이 30px이고 특정 문자크기가 10px일 때
+            2[rem]이면 해당 글씨 크기 상관없이 [30*2=60px]
+            2[em]이면 크기가 10px의 2배로 20px */
+        html{
+            font-size: 30px;
+        }
+
+        #content{
+            font-size: 10px;
+        }
+        
+        .para1{
+            font-size: 2em;
+        }
+
+        .para2{
+            font-size: 2rem;
+        }
+        
+        .para3{
+            font-size: 2em;
+        }
+
+        .para4{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체적인 글꼴크기는 [html]정의로 30px -->
+    <div id="content">
+        <p class="para1">1. 2em (10×2=20px)</p>  
+        <p class="para2">2. 2rem (30×2=60px)</p>
+    <!-- [para1]: [em]을 사용했기에 해당 문구를 감싸는 [id="content"] 10px의 2배로 20px -->
+    <!-- [para2]: [rem]을 사용했기에 전체스타일인 [html] 30px의 2배 로 60px -->
+    </div>
+    <p class="para3">3. 2em  (30×2=60px)</p>
+    <p class="para4">4. 2rem (30×2=60px)</p>
+    <!-- [para3],[para4]: 두가지 모두 부모가 html 이기에 [em],[rem] 상관없이 30px의 2배인 60px -->
+</body>
+</html>

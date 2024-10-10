@@ -1,0 +1,23 @@
+div {
+    border: 1px solid black;
+    width:500px;
+    height: auto;
+
+}
+.menu {
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+}
+.menu_name {
+    text-align: ;
+}
+ul {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+li {
+    display: inline-block;
+}

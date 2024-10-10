@@ -1,0 +1,51 @@
+body {
+    background-color: gray;
+    width:960px;
+    height: 9600px;
+    margin:auto;
+    /* position:relative; */
+}
+div {
+    width: 960px;
+}
+#wrap {
+    position: relative;
+    
+}
+
+#aside {
+    height: 600px;
+    width:200px;
+    float: right;
+    position: absolute;
+    top:130px;
+    right:0px;
+}
+#header {
+    /* position: absolute; */
+    position: fixed;
+    width:960px;
+    height: 100px;
+    top:0px;
+    z-index: 1;
+}
+#navigation{
+    position: absolute;
+    top: 100px;
+}
+.section {
+    position: relative;
+    top:130px;
+    width: 760px;
+    height: 200px;
+    float: left;
+}
+#section1, #section2, #section3 {
+    /* width:740px; */
+    /* float: left; */
+}
+#footer {
+    width:960px;
+    position: absolute;
+    top: 730px;
+}

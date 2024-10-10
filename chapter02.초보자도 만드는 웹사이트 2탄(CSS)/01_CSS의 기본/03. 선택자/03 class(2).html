@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** [class]: 여러개의 요소에 한꺼번에 스타일을 적용할 때 사용(이름 중복 가능)
+            또한 여러개의 클래스를 한번에 적용시 포함된 클래스만 발현된다 (or)같은 느낌.
+          * [id]: 하나의 요소에 하나의 스타일을 적용(이름 중복 불가능)
+          * 편의성상 [class]를 자주 사용한다.
+          * [italic]: 기울임꼴          */
+        .bg{
+            color: red;
+        }
+        .accent{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <h1>레드향</h1>
+            <p>껍질에 붉은 빛이 돌아 <span class="bg accent">레드향</span>이라 불린다.</p>
+            <!-- ┗━[class]에 [bg, accent]를 적용해서 컬러와 폰트스타일 2개가 적용 -->
+            <p><span class="bg">레드향</span>은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+            <!-- ┗━[class]에 [bg]만 적용해서 컬러만 적용-->
+            <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+        </div>    
+</body>
+</html>
+
+        <!-- <div>
+            <h1>레드향</h1>
+            <p>껍질에 붉은 빛이 돌아 <span>레드향</span>이라 불린다.</p>
+            <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+            <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+        </div> -->

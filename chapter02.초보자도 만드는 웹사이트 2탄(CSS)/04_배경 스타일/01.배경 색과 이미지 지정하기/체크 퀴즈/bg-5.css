@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    background: url(../../images/bg5.jpg) no-repeat left top;
+    background-attachment: fixed;
+    /* background-image: url(../../images/bg5.jpg); */
+    width: 100%;
+    margin: auto;
+}
+h1 {
+    margin-top: 150px;
+    /* 상단 마진 */
+    font-size: 80px;
+    /* 글자 크기 */
+    text-align: center;
+    /* 가운데 정렬 */
+}

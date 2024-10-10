@@ -1,0 +1,198 @@
+* {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+html {
+    width: 100%;
+    height: inherit;
+}
+
+body {
+    background: #272727;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#contentArea {
+    overflow-x: hidden;
+    padding-bottom: 0;
+}
+
+#bbs-bottom-banner-container {
+    padding-top: 100px;
+    background: #272727;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    font-weight: 400;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline-width: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main-content-wrap {
+    position: relative;
+    min-width: 1170px;
+}
+
+.content-board-area {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+aside.logo-area {
+    position: absolute;
+    top: 250px;
+    /*width: fit-content;*/
+    /*min-width: 300px;*/
+    min-height: 800px;
+    display: block;
+    z-index: 1;
+}
+
+aside.logo-area.fixed {
+    position: fixed;
+    top: 40px;
+    margin-top: 0;
+}
+
+aside.left {
+    left: 50% !important;
+    margin-left: -920px;
+}
+
+aside.right {
+    right: 50% !important;
+    margin-right: -920px
+}
+
+.flexslider {
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+
+.flexslider {
+    position: relative;
+    overflow: hidden;
+}
+
+.flexslider .flex-direction-nav .flex-nav-prev {
+    display: block;
+}
+
+.flexslider .flex-direction-nav .flex-nav-next {
+    display: block;
+}
+
+.flexslider .flex-direction-nav a {
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    font-size: 0;
+    width: auto !important;
+    height: auto !important;
+    padding: 11px 9px 11px 11px !important;
+    margin: 0;
+    transform: translateY(-50%) !important;
+}
+
+.flexslider .flex-prev {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.flexslider .flex-next {
+    border-radius: 5px 0 0 5px !important;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    left: 0;
+    opacity: .8;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    right: 0;
+    opacity: .8;
+}
+
+.flexslider .flex-direction-nav .flex-prev:hover {
+    opacity: 1;
+    background: rgb(0, 0, 0, 1);
+}
+
+.flexslider .flex-direction-nav .flex-next:hover {
+    opacity: 1;
+    background: rgb(0, 0, 0, 1);
+}
+
+.flexslider .flex-direction-nav a:before {
+    color: #fff;
+    font-size: 12px;
+}
+sponsor-banner-layer
+div info-layer
+    div info-contents
+        div awards-wrapper
+            div item
+                img span
+            /div item
+        /div awards-wrapper
+
+        div company-info
+            div sns-container
+                div
+                    a img /a
+                    a img /a
+                /div
+                div sns-wrapper
+                    a img /a *5개
+                /div sns-wrapper
+            /div sns-container
+        /div company-info
+    div extra-infor
+        a span /a *8개
+    /div extra-info
+    p /p
+div info-contents
+info-later end
+
+

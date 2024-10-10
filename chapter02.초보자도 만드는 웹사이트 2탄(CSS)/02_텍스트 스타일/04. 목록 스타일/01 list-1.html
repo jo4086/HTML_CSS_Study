@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** [list-style-type], [list-style] : 목록의 스타일을 바꿈
+          * [:none;] : 옆에 목록을 없앰
+          * [:upper-alpha;] : 대영문으로
+          * 기타등등 특징별로 바꿔줌
+          
+         ** [list-style-image] : 이미지파일을 목록으로 설정 */
+        .book1 {
+            list-style-type: none;
+        }
+
+        .book2 {
+            list-style-type:upper-alpha;
+        }
+
+        .book3 {
+            list-style-image: url(../images/dot.png)
+        }
+    </style>
+</head>
+<body>
+    <h1>도서 시리즈</h1>
+
+    <ul class="book1">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+
+    <ol class="book2">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ol>
+    
+    <ul class="book3">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+
+</body>
+</html>

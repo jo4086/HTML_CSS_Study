@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(74, 92, 80);
+    width: 960px;
+    margin: auto;
+}
+/* height에 %를 적용할 때는 height를 감싸고 있는 부모 태그의 높이가 있어야 한다.
+   아래에서는 [wrap]을 부모로 두고있는 [aside]의 높이를 100%로 설정하기 위해서 */
+
+#wrap {
+    height: 600px;
+}
+
+#aside {
+    float: right;
+    width: 200px;
+    height: 100%;
+}
+
+.section {
+    float: left;
+    height: 200px;
+    width: 760px;
+}
+
+
+#footer {
+    width: 960px;
+    ;
+}
+
+/*  구성
+<div id="warp">
+    <div id="aside">
+        <p>__</p>
+    </div>
+    <div class="section>
+        <div class="section1">
+        <d class="section2">
+        <div class="section3">
+    </div>
+</d
+        */

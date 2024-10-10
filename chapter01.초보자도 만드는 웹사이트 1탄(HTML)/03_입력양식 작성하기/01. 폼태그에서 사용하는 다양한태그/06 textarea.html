@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=".">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="user-name" >
+                </li>
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="text" id="addr" name="addr">
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="text" id="email" name="email">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="d-day">배송 지정</label>
+                    <input type="data" id="d-day" name="d-day">
+                    <small>(주문일로부터 최소 3일 이후)</small>
+                    <!-- <samll> : 글자를 작게 표시 -->
+                </li>
+                <li>
+                    <label for="">메모</label>
+                    <textarea name="memo" id="" cols="40" rows="4"></textarea>
+                    <!-- <textarea> : 텍스트를 많이 넣을 수 있게 해준다. (예시 : 게시판) -->
+                    <!-- [rows]속성 : 텍스트 상자에서 행의 갯수 -->
+                    <!-- [cols]속성 : 텍스트 상자에서 한 행의 글자수 제한 -->
+                </li>
+                <li>
+                    <input type="submit" value="주문">
+                    <input type="reset" value="취소">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

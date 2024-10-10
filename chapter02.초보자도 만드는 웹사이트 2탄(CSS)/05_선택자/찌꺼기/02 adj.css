@@ -1,0 +1,20 @@
+/** [a + b] : a요소의 형제 요소 중 첫번째 b 요서에 적용시킨다.  */
+
+body {
+  background-color: #eee;
+} 
+section {
+  width: 600px;
+  margin: 20px auto;
+}
+p {
+  width: 500px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  line-height: 2;
+}
+h1 + p {
+  background-color: #222;
+  color: #fff;
+}

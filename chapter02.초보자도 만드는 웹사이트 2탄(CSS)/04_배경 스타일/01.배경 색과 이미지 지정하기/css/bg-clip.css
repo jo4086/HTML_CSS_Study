@@ -1,0 +1,23 @@
+.desc {
+    border: 5px dotted #222;
+    background-color: #ffd9a0;
+    width: 350px;
+    padding: 20px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(../../images/bg4.jpg);
+}
+
+#clip-border {
+    background-clip: border-box;
+}
+
+#clip-padding {
+    background-clip: padding-box;
+}
+
+#clip-content{
+    /* background-clip: content-box; */
+    background-origin: content-box;
+    /* background-image: url(../../images/bg4.jpg); */
+}

@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+    margin-left:  -30px;
+}
+
+li {
+    background-image:  url(../../images/book-icon.png);
+    background-repeat: no-repeat;
+    
+    background-position: left center;
+    /* 이미지를 왼쪽 가운데 정렬?? */
+
+    padding-left: 50px;
+    /* 글의 좌측 50px 여백으로 우측으로 이동 */
+
+    line-height: 30px;
+    /* 줄간격 40px */
+}

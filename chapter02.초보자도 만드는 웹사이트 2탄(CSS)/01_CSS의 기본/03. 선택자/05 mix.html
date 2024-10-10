@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /** 붙여서 이어쓰기(조합선택자): 2개의 선택자를 조합해서 사용, 'and'라고 이해하기 */
+    .head.comm{
+        color: blue;
+    }
+    .para1#text{
+        color: red;
+    }
+    #text2{
+        font-style: italic;
+    }
+    h1.head{
+        color: green;
+    }
+    /** 위에서 [h1.head]는 <h1>태그면서 [class="head"]인 속성에만 그린색 적용하고
+        [id="text2"]는 and에 포함되지 않기에 이탤릭과 그린 모두 적용됌
+        밑에 <h1 class="head comm" id="text2">에서는 [.head.comm]이 먼저 적용 됐으나
+        다시 밑에 [h1.head]코드가 적용되서 최종적으로 그린색이 나온다.              */
+    </style>
+</head>
+<body>
+        <div>
+            <h1 class="head comm" id="text2">레드향</h1>
+            <p class="para1" id="text">껍질에 붉은 빛이 돌아 <span class="head comm">레드향</span>이라 불린다.</p>
+            <p class="para2">레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+            <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 <span>알려져 있다.</span></p>
+        </div>    
+</body>
+</html>

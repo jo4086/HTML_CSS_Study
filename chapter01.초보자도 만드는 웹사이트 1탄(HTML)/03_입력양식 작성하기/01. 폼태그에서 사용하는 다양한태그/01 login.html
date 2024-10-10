@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ** 03_입력양식 작성하기 -->
+    <!--  * 03-01. 폼태그에서 사용하는 다양한태그 -->
+    <!--  * 03-01-01 index.html -->
+
+ <!-- <form> : 서버로 데이터를 보낼 때 택배상자와 비슷한 역할 -->
+ <!-- ├─action : 데이터를 보낼 서버의 주소(도착 주소) -->
+ <!-- └─method : 어떤 방식으로 데이터를 보낼지 (선불, 착불 개념) -->
+
+    <form action="/login" method="post">
+ <!-- id속성 : 요소를 구분하기 위해 쓰는 속성(회원가입할 때 id의 역할과 비슷),중복 속성값 X, 속성값은 자유롭게 짓는다 -->
+ <!-- <label> : 입력양식 태그의 설명을 위한 태그, 웹 접근성 때문에 반드시 입력양식 태그와 같이 사용!! -->
+          <label for="user_id">아이디</label>
+          <input type="text" id="user_id" size="10" >
+
+          <label for="user_pw">비밀번호</label>
+          <input type="password" id="user_pw" size="10">
+ <!-- size는 잘 안씀 -->
+
+          <input type="submit" value="로그인">
+ <!-- submit : 서버에 사용자가 입력한 데이터 전송한다. -->
+          <input type="reset" value="취소">
+ <!-- reset : form태그 내부에 있는 입력양식 태그의 모든 내용을 지워준다. -->
+
+
+ <!-- 데이터 전송방식 -->
+ <!-- ├─1. GET : URL에 포함해서 데이터를 서버에 전송 (주소에 노출이 되어서 보안이 취약함, 검색할 때)-->
+ <!-- └─2. POST : 데이터를 숨겨서 서버에 전송하는 방식 (로그인시 id, pw) -->
+
+    </form>    
+</body>
+</html>

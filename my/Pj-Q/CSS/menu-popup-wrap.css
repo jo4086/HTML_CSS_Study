@@ -1,0 +1,174 @@
+#menu-popup-wrap {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 400px;
+    max-height: 700px;
+    margin: 0;
+    padding: 16px 0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    z-index: 10000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.1s;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#menu-popup-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+#menu-popup-wrap>.title {
+    padding: 16px;
+    font-size: 18px;
+    color: #DDD;
+    font-weight: 600;
+}
+
+#menu-popup-wrap .divider-bottom {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.6);
+}
+
+#menu-popup-wrap .notice-wrap {
+    height: 48px;
+    margin: 6px 16px 0;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(68, 68, 68, 0.6);
+    border-radius: 10px;
+}
+
+#menu-popup-wrap .notice-wrap .notice-list {
+    margin-right: 16px;
+    font-size: 14px;
+    color: #FF9200;
+    white-space: nowrap;
+}
+
+#menu-popup-wrap .notice-wrap .notice-list::before {
+    content: "";
+    width: 16px;
+    height: 13px;
+    margin-right: 6px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_notice.svg") no-repeat left;
+    background-size: 16px 13px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#menu-popup-wrap .notice-wrap .notice {
+    position: relative;
+    width: 100%;
+    padding-right: 16px;
+    font-size: 14px;
+    color: #DDD;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#menu-popup-wrap .notice-wrap .notice::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_arrow_right_w.svg") no-repeat center;
+    display: inline-block;
+}
+
+#menu-popup-wrap .main-menu {
+    position: relative;
+    padding: 16px;
+    font-size: 16px;
+    color: #888;
+    background-color: #272727;
+    cursor: pointer;
+}
+
+#menu-popup-wrap .main-menu::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_arrow_down.svg") no-repeat center;
+}
+
+#menu-popup-wrap .main-menu.expand::after {
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_arrow_right_w.svg") no-repeat center;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+#menu-popup-wrap .sub-menu-wrap {
+    height: 0;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    background-color: #1D1D1D;
+    transition: all 0.1s;
+    overflow: hidden;
+}
+
+#menu-popup-wrap .sub-menu-wrap.expand {
+    height: auto;
+    padding: 16px 16px 0 16px;
+}
+
+#menu-popup-wrap .sub-menu-wrap .section {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #FF9200;
+    border-bottom: 1px solid #444;
+    grid-column: 1/3;
+}
+
+#menu-popup-wrap .sub-menu-wrap .section:not(:first-child) {
+    margin-top: 16px;
+}
+
+#menu-popup-wrap .sub-menu-wrap .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-popup-wrap .sub-menu-wrap .menu a {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #DDD;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#menu-popup-wrap .sub-menu-wrap .menu font {
+    font-size: 16px;
+}
+
+#menu-popup-wrap .sub-menu-wrap .menu .favorite {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#menu-popup-wrap .bottom-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #888;
+    line-height: 48px;
+    background-color: #272727;
+    cursor: pointer;
+}

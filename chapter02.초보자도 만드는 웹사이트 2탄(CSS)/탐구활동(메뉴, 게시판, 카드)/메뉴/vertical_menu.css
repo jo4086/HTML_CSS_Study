@@ -1,0 +1,29 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul * {
+    text-decoration: none;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    width:200px;
+}
+
+li a {
+    display: block;
+    width: 200px;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+}
+/* 메뉴에 호버했을때 a요소의 css속성을 이렇게 바꾸겠다는 말 */
+
+/* <ul, ol>태그에서 옆에 목록을 아예 지울 땐
+   <ul, ol>에서 <padding> :0;을 주면 된다. */
+
+/* [hover] : 커서를 올렸을 때 화면이 반응하게 해줌 */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .bg-tr {
+        background-color: skyblue;
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    .box2 {
+        background-color: orange;
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        transition:ease-in 2s;
+    }
+    .bg-tr:hover {
+        border:2px solid gray;
+        background-color: aquq;
+        transform: rotate(180deg);
+        transition: ease-in 3s;
+
+    }
+    div.box2:hover {
+        transform: scale(0.5);
+        border:2px solid red;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="bg-tr"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+.count-area {
+    height: 16px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.common-comments {
+    font-size: 12px;
+    color: #888;
+    line-height: 1;
+    display: inline-flex;
+}
+
+.common-comments:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-top: -1px;
+    margin-right: 4px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/common/comment_count.png") no-repeat center;
+    background-size: 11px;
+}
+
+.common-hits {
+    font-size: 12px;
+    color: #888;
+    line-height: 1;
+    display: inline-flex;
+}
+
+.common-hits:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin-top: -2px;
+    margin-right: 4px;
+    background: url(https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/common/ic_view.svg) no-repeat;
+    background-size: 14px 14px;
+}
+
+.common-time {
+    font-size: 12px;
+    color: #888;
+    line-height: 1;
+    display: inline-flex;
+}
+
+.common-time:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-top: -1px;
+    margin-right: 4px;
+    background: url(https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/common/ic_clock.svg) no-repeat;
+    background-size: 11px;
+}

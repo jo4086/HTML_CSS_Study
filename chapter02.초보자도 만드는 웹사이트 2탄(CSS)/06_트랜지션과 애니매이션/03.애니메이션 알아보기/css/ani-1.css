@@ -1,0 +1,68 @@
+	/* <div id="container">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+	</div> */
+#container {
+    width: 500px;
+    margin : 20px auto;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 50px;
+}
+#box1 {
+    background-color: #4cff00;
+    border:1px solid transparent;
+    animation-name:shape;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+#box2 {
+    background-color: #8f06b0;
+    border: 1px solid transparent;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier;
+    transform-origin: center;
+}
+
+@keyframes shape {
+    from {
+        border: 1px solid transparent1
+    }
+    40% {
+        border: 1px solid red;
+        border-radius: 50%;
+    }
+    60% {
+        border: 1px solid red;
+        border-radius: 50%;
+    }
+    100% {
+        border: 1px solid transparent1
+    }
+}
+@keyframes rotate {
+    0% {
+        transform:
+        rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 120px;
+        height: 120px;
+    }
+}
+/** animation-iteration-count */
+/** [animation-direction:alternate]
+  * 홀수 : normal (from ㅡ> to)
+    짝수 : reverse (to ㅡ> from) */
+/** [animation-direction:alternate-reverse]
+  * 홀수 : reverse (toㅡ>from)
+  * 짝수 : normal (fromㅡ>to) */
+

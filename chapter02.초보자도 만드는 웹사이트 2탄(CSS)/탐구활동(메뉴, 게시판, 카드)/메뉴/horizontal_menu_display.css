@@ -1,0 +1,29 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: white;
+}
+
+ul {
+    background-color: black;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+    background-color: #4d4c4c;
+}
+.active {
+    background-color: #448ada;
+}
+/* li a:hover:not(.active) { */
+/* li a:hover, .active { */

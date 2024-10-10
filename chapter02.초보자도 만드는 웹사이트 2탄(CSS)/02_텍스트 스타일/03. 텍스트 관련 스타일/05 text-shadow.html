@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** [text-decoration] : 텍스트에 선을 그음
+          * [:none;] : 줄 제거 (하이퍼 링크같은 곳)
+          * [:underline;] : 밑줄
+          * [:overline;] : 윗줄
+          * [:line-through;] : 취소선
+
+         ** [text-shadow] : 음영추가
+          * [: _px _px _px color;] : 가로, 세로, 번짐정도, 색상
+
+         ** [text-transform] : 텍스트를 대문자 또는 소문자로 고정가로, 세로, 번짐정도, 색상 
+          * [:capitalize;] : 첫문자만 대문자로
+          * [:uppercase;] : 모두 대문자로
+          * [:lowercase;] : 모두 소문자로 */
+        
+        html {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        .lowercase {
+            text-transform: lowercase;
+        }
+        .capitalize {
+            text-transform: capitalize;
+        }
+        .shadow1 {
+            text-shadow: 6px 6px 6px hsl(130, 100%, 50%, 0.5);
+        }
+        .shadow2 {
+            font-size: 1.5em;
+            text-shadow: 5px 7px 3px #ffa500;
+        }
+        .shadow3 {
+            font-size: 30px;
+            text-shadow: -7px -5px 1px #ffa500;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>text decration 속성</h1>    
+    <p style="text-decoration: none;">none</p>
+    <p style="text-decoration: underline;">underline</p>
+    <p style="text-decoration: overline;">overline</p>
+    <p style="text-decoration: line-through;">line through</p>
+    <p class="capitalize">capitalize</p>
+    <p><span class="lowercase">LOWER</span>CASE
+    <br>
+       <span class="uppercase">upper</span>case
+    </p>
+    <p class="shadow1">SHADOW1</p>
+    <p class="shadow2">SHADOW2</p>
+    <p class="shadow3">SHADOW3</p>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* 초기화 CSS */
+* {
+    margin: 0;
+    padding:0;
+    /* text-align: center; */
+}
+
+/* 부모태그의 속성값을 그대로 받아 사용  */
+html {
+    font-size:10px;
+}
+
+/** 공통 버튼 */
+
+ul,
+li {
+    list-style: none;
+}
+
+/* [inherit] : 부모태그의 속성을 상속받음 */
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* index.html에 필요한 CSS 설정 */
+/* 공통설정 */
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    /* 최소 너비 80px */
+    /* min-width: 80px;
+    margin-left:10px;
+    padding:10px;
+    border:1px solid #000; */
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.bt_wrap a:hover {
+    text-decoration: underline;
+}
+
+.bt_wrap a.on {
+    background: #000;
+    color: #fff;
+}
+
+/* list.html  */
+.wrap{
+    width: 1000px;
+    margin: 0 auto;   
+}
+
+.board_list {
+    width: 100%;
+    border-top:1px solid #444444;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+.board_list caption {
+    padding:30px;
+}
+
+.board_list th, 
+.board_list td {
+    /* border-spacing: 0; */
+    border-bottom: 1px solid #444;
+    padding:10px;
+    text-align: center;
+}
+
+.board_list td.title>a:hover {
+    text-decoration: underline;
+}
+
+/* [display:flex] : div들을 정렬해줌
+   정렬할 목록들의 부모태그에 [flex]적용하고 [justify-content]사용
+   여기서는 center로 가운데 정렬 */
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.board_page a {
+    /* a태그 내부에 있는 텍스트를 가운데 정렬하기 위해 사용. */
+    /* text-align: center; */
+    display:inline-block;
+    width: 32px;
+    height:32px;
+
+    /* boder + padding + content */
+    box-sizing:border-box;
+
+    /* [line-height] : 문자를 수직상 가운데 배열 */
+    line-height: 32px;
+    border-left:0;
+}
+
+.board_page a:hover {
+    text-decoration: underline;
+}
+
+.board_page a.bt {
+    /* padding-top: 10px; */
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.board_wrap {
+    width:1000px;
+    margin:0 auto;
+}
+
+.board_title {
+    margin: 30px 10px;
+}
+
+.board_title strong {
+    font-size: 3rem;
+}
+
+.board_title p {
+    margin-top: 5px;
+    font-size:1.4rem;
+}
+
+/* view.html */
+.board_view {
+    width: 100%;
+    border-top:2px solid black;
+}
+
+.board_view .title {
+    padding:20px 15px;
+}
+
+
+/*  */
+.bt_list {
+    text-align: right;
+}

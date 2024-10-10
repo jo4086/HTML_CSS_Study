@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span:last-of-type { /* article *:last-of-type과 동일 */
+         background-color: yellowgreen;
+    }
+    </style>
+</head>
+<body>
+<article>
+    <div>이 'div'는 첫 번째입니다.</div>
+    <div>이 <span>중첩된 'span'은 첫 번째이자 마지막입니다.</span>!</div>
+    <div>
+        이 <em>중첩된 'em'은 첫 번째입니다.</em>, 하지만 <em>중첩된 이 'em'은 마지막입니다.</em>!
+    </div>
+    <div>이 <span>중첩된 'span'은 스타일됩니다. 첫 번째이자 마지막입니다.</span>!</div>
+    <p>이 'p'는 첫 번째이자 마지막입니다.</p>
+    <div>이 'div'는 마지막입니다.</div>
+</article>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+/** 자식선택자 [a>b]
+  * <a>의 자식으로 있는 <b>요소를 모두 적용시킨다. */
+
+body {
+  background-color: #eee;
+}
+
+section {
+  width: 600px;
+  margin:20px auto;
+}
+p {
+  width:500px;
+  padding:10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  line-height: 2;
+}
+section > p {
+  color: blue;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** body 태그 안에 오는 모든 내용에 스타일 지정
+          * [font-size]: 글꼴 크기
+            * [px]: 절대크기
+            * [%]: 부모 태그의 폰트 사이즈 기준,
+            * n[em]: n배 배율 부모 태그의 폰트 사이즈가 기준
+            * n[rem]: n배 배율
+          * [font-family]: 글꼴 서식
+          * [font-weight]: 글꼴 굵기 (bold, 100~900사이)
+          * [italic]: 기울임꼴 */
+        body{
+            font-size: 20px;
+        }
+        h1{
+            font-family: 바탕;
+            font-size: 20px;
+        }
+        .accent{
+            font-weight: 900;
+            font-size: 200%;
+            font-size: 300%;
+            font-size: 150%;
+            font-size: 0.5em;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .para{
+            font-size: 40px;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>레드향</h1>
+        <p class="para">껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+        <!-- [<span class="accent">레드향</span>]는 [para]의 배율과 [accent]의 배율이 같이 적용됌 -->
+        <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+        <p class="italic">비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+    </div>
+</body>
+</html>

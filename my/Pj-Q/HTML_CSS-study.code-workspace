@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../HTML_CSS-main"
+		},
+		{
+			"path": "../../../HTML_CSS_Quiz-main"
+		},
+		{
+			"path": "../../../HTML_CSS-assignment"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML_CSS-assignment",
+		"liveServer.settings.port": 5501
+	}
+}

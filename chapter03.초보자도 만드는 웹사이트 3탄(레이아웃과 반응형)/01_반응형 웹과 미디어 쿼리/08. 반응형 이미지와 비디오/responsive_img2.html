@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- [min-width: n_px] : n_px부터 적용 -->
+    <picture>
+        <source srcset="../images/lime-1000.jpg" media="(min-width:1024px)">
+        <!-- width가 1024px 보다 클 때 [lime-1000을 보여줌] -->
+        <source srcset="../images/lime-740.jpg" media="(min-width:768px)">
+        <!-- width가 768px 보다 클 떄 [lime-740을 보여줌] -->
+        <source srcset="../images/lime-300.jpg" media="(min-width:320px)">
+        <!-- width가 320px 보다 클 때 [lime-300]을 보여줌 -->
+        <img src="../images/lime.jpg" alt="lime" style="max-width:100%">
+        <!-- 위 모두 조건이 안된다면 css 속성의 style / max-width:100% 속성으로 보여줌
+         * max : 화면너비에 이미지가 맞춰짐
+         * min : 이미지의 최소 크기를 고정시켜 100%로한다면 이미지의 원본크기가 최솟값으로 설정  -->
+    </picture>
+    <img src="../images/" alt="">
+</body>
+</html>

@@ -1,0 +1,14 @@
+div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.grad {
+    /* background: blue; */
+
+    background: linear-gradient(to right bottom, blue, white);
+    /* [linear-gradient] : 그라데이션을 주는것,
+     * 방향은 right에 bottom 방향으로
+     * 색상은 블루와 화이트 */
+}

@@ -1,0 +1,35 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active1, .active2) {
+    background-color: #4d4c4c;
+}
+.active1 {
+    background-color: hsl(100, 60%, 30%);
+}
+.active2 {
+    background-color: #448ada;
+}
+/* [li]를 float로 할 시 보이지 않는 현상이 생김
+   [ul]에 [overflow:hidden;]을 적용하면 보이게 된다.*/

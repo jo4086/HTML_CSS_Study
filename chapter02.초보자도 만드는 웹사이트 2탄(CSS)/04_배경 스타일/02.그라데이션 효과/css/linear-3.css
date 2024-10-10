@@ -1,0 +1,18 @@
+div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.grad {
+    background: linear-gradient(45deg, #f00, #fff);        
+}
+
+#grad {
+    background-color: blue;
+    background: linear-gradient(to bottom,
+        #06f,
+        white 30%,
+        #06f);
+        /* 위에서부터 30% 위치에 그라데이션 지정*/);
+}

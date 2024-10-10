@@ -1,0 +1,63 @@
+body {
+    background-color: hsla(160, 100%, 70%, 0.2);
+    /* border:1px solid red; */
+    width:800px;
+    margin:auto;
+}
+*:not(.bt_list) {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+
+div {
+    width:100%;
+    background-color: hsl(0, 0%, 98%);
+}
+.div1 {
+        border: 1px gray;
+        border-style: double;
+        border-collapse: collapse;
+        padding-bottom:10px
+}
+
+table, th {
+    margin:auto;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+thead {
+    font-weight: bold;
+}
+td {
+    border:1px solid hsl(0, 10%, 80%);
+}
+table {
+    box-sizing: border-box;
+    width: 760px;
+    border: px solid black;
+    margin-bottom:5px;
+}
+
+.table{
+    background-color: hsl(0, 0%, 98%);
+}
+div .bt_wrap a {
+    text-align: left;
+    width:auto;
+    display: inline-block;
+    position:relative;
+    left:00px;
+    margin-bottom: 20px;
+}
+div a:hover(.write) {
+    font-weight: bold;
+}
+a:hover {
+    font-weight: bold;
+}
+div a:hover:not(.table, .write) {
+    background-color: black;
+    color: white;
+    font-weight: 100;
+}

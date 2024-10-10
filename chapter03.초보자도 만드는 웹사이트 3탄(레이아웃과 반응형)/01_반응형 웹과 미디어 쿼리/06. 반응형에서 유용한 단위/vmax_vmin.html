@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         
+         div#a {
+            width: 50vmax; /* 뷰포트의 너비와 높이 중 큰 쪽의 50% */
+            height: 50vmin; /* 뷰포트의 너비와 높이 중 작은 쪽의 50% */
+            background-color: red;
+         }
+
+         div#b {
+            width: 50vmin; /* 뷰포트의 너비와 높이 중 큰 쪽의 50% */
+            height: 50vmax; /* 뷰포트의 너비와 높이 중 작은 쪽의 50% */
+            background-color: blue;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="a"></div>
+      <div id="b"></div>
+   </body>
+</html>

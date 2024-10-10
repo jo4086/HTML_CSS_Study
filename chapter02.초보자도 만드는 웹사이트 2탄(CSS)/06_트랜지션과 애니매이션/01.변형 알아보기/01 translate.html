@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        /* [id*=move]를 추가함으로써 테두리를 origin 클래스에서 origin 클래스가 가지고 있는 id에 move가 들어간 태그에게 옮겼다. */
+        .origin [id*=move] {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .origin > div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        #movex:hover{
+            transform:
+            translateX(30px);
+        }
+        #movey:hover{
+            transform:
+            translateY(30px);
+        }
+        #movexy:hover {
+            transform:
+            translate(-40px,40px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="origin">
+            <div id="movex"></div>
+        </div>
+        <div class="origin">
+            <div id="movey"></div>
+        </div>
+        <div class="origin">
+            <div id="movexy"></div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,292 @@
+#noti-popup-wrap {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 400px;
+    height: 700px;
+    margin: 0;
+    padding: 16px 0;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    z-index: 10000;
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.1s;
+}
+
+#noti-popup-wrap>.title {
+    position: relative;
+    padding: 16px;
+    font-size: 18px;
+    color: #DDD;
+    font-weight: 600;
+}
+
+#noti-popup-wrap>.title .btn-delete {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_trash.svg") no-repeat center;
+    background-size: 18px;
+}
+
+#noti-popup-wrap>.title .delete-more-action {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+    width: 100px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    display: none;
+    z-index: 3;
+}
+
+#noti-popup-wrap>.title .delete-more-action.active {
+    display: block;
+}
+
+#noti-popup-wrap>.title .delete-more-action button {
+    width: 100%;
+    height: 48px;
+    font-size: 12px;
+    color: #DDD;
+}
+
+#noti-popup-wrap>.title .delete-more-action button:nth-child(1) {
+    border-bottom: 1px solid #444;
+}
+
+#noti-popup-wrap .divider-bottom {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.6);
+}
+
+#noti-popup-wrap .action-wrapper {
+    padding: 10px 16px;
+    text-align: right;
+}
+
+#noti-popup-wrap .action-wrapper .select-wrapper {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#noti-popup-wrap .action-wrapper select {
+    padding-right: 6px;
+    font-size: 16px;
+    color: #DDD;
+    font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#noti-popup-wrap .action-wrapper .select-wrapper:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/common/ic_arrow_down_w.svg") no-repeat center;
+    background-size: 12px;
+    display: inline-block;
+}
+
+#noti-popup-wrap .action-wrapper button {
+    margin-top: 1px;
+    margin-left: 16px;
+    padding: 0;
+    font-size: 14px;
+    color: #DDD;
+    cursor: pointer
+}
+
+#noti-popup-wrap .action-wrapper button:disabled {
+    color: #888;
+}
+
+#noti-popup-wrap .noti-list {
+    max-height: 560px;
+    padding: 14px 16px;
+    list-style: none;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#noti-popup-wrap .noti-list::-webkit-scrollbar {
+    display: none;
+}
+
+#noti-popup-wrap .noti-list li {
+    position: relative;
+    padding: 16px;
+    background-color: rgba(68, 68, 68, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#noti-popup-wrap .noti-list li:not(:first-child) {
+    margin-top: 14px;
+}
+
+#noti-popup-wrap .noti-list li .top {
+    line-height: 19px;
+    display: flex;
+    align-items: start;
+}
+
+#noti-popup-wrap .noti-list li .top .badge {
+    min-width: 20px;
+    height: 18px;
+    margin-right: 4px;
+    padding: 0 4px;
+    font-size: 10px;
+    color: #DDD;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+#noti-popup-wrap .noti-list li .top .title {
+    width: 100%;
+    padding-right: 23px;
+    font-size: 14px;
+    color: #DDD;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#noti-popup-wrap .noti-list li .top .more {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_more_vertical.svg") no-repeat center;
+    background-size: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#noti-popup-wrap .noti-list li .content {
+    margin-top: 8px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #DDD;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 3em;
+}
+
+#noti-popup-wrap .noti-list li .date {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+#noti-popup-wrap .noti-list li .dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    border-radius: 10px;
+    opacity: 0.6;
+    display: none;
+}
+
+#noti-popup-wrap .noti-list li .dim.active {
+    display: block;
+}
+
+#noti-popup-wrap .noti-list li .item-more-action {
+    position: absolute;
+    top: 35px;
+    right: -5px;
+    width: 100px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    display: none;
+    z-index: 2;
+}
+
+#noti-popup-wrap .noti-list li .item-more-action.active {
+    display: block;
+}
+
+#noti-popup-wrap .noti-list li .item-more-action button {
+    width: 100%;
+    height: 48px;
+    font-size: 12px;
+    color: #DDD;
+}
+
+#noti-popup-wrap .noti-list li .item-more-action button:nth-child(1) {
+    border-bottom: 1px solid #444;
+}
+
+#noti-popup-wrap .login-wrapper {
+    margin: 28px 16px;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(68, 68, 68, 0.6);
+    border-radius: 10px;
+}
+
+#noti-popup-wrap .login-wrapper .description {
+    font-size: 16px;
+    color: #DDD;
+    line-height: 26px;
+}
+
+#noti-popup-wrap .login-wrapper .btn-login {
+    margin-top: 20px;
+    padding: 10px 10px 8px;
+    font-size: 16px;
+    color: #272727;
+    font-weight: 600;
+    background-color: #FF9200;
+    border-radius: 20px;
+}
+
+#noti-popup-wrap .empty {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 120px);
+    background: url("https://img2.quasarzone.com/homepage/real/themes/quasarzone/images/main/new/ic_empty_noti.svg") no-repeat center;
+    background-size: 87px 102px;
+    display: none;
+}
+
+#noti-popup-wrap .empty:after {
+    content: "받은 알림이 없어요.";
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #DDD;
+    display: block;
+}
+
+#noti-popup-wrap .loading {
+    width: 45px;
+    margin: 0 auto;
+    display: none;
+}

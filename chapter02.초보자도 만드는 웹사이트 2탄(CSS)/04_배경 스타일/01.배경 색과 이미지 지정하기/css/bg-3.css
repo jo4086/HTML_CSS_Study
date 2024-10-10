@@ -1,0 +1,48 @@
+body {
+    height: 1500px;
+    background-image: url(../../images/bg2.png);
+    background-repeat: no-repeat;
+    
+    background-attachment:fixed;
+    /* 백그라운드 이미지를 고정시킴 */
+
+    background-position: right top;
+    /* 기본적으로 [left]나 [right], [center]를 하면 그쪽방향에서 정 가운데에 생성됌, 아래나 위로 올리려면 top, bottom을 추가로 적어준다.
+    [px]나 [%]로도 가능 
+    * [px, %]와 방향을 조합할 때 순서는 꼭
+      [px,% + 방향]순서 (아니면 적용안됌)
+    */
+}
+
+div {
+    background-position: right top;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 20px solid hsla(0, 0%, 80%, 0.7);
+    background-image: url(../../images/bg3.png);
+    background-repeat: no-repeat;
+}
+/* #bg1 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border:none;
+    outline: 20px solid hsla(0, 0%, 80%, 0.7);
+} */
+
+#bg1 {
+    background-origin: padding-box;
+    /* 백그라운드는 기본값이 [padding-box] */
+}
+
+#bg2 {
+    background-origin: border-box;
+    /* 백그라운드 기준이 [border]로 설정함으로 침범시킴 */
+}
+
+#bg3 {
+    background-origin: content-box;
+    /* 백그라운드 기준이 [content]로 설정하여 패딩여백이 생김 */
+}

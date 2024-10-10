@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+    width: 100%;
+	background: #ccc;
+	padding: 20px;	
+}
+
+legend {
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+li {
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+li label {
+    padding: 10px;
+    font-size: 14px;
+}
+
+input {
+    position: absolute;
+    left: 120px;
+    width: 200px;
+    border-radius: 2px;
+    border:1px solid black;
+    height: 20px;
+    padding-left: 3px;
+}
+input:not(input[type=tel]) {
+    /* position: absolute; */
+    /* left:120px; */
+    border: 2px solid hsla(0, 70%, 70%, 1);
+    /* width: 200px; */
+}
+input#level[type=text] {
+    border: none;
+
+}
+
+fieldset {
+    position: relative;
+    /* background-color: yellow; */
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+#signup {
+	background: #fff;
+	border: 1px solid #222;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;	
+	margin: 30px auto;
+}
+
+ul {
+    list-style: none;
+}
+button {
+    padding:10px 30px 10px 30px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+/* 인라인 태그(button)를 가운데 정렬하기 위해서는 display를 block으로 */
+
+/* 선생님 코드
+
+#sign label {
+    font-size: 13px;
+    width: 110px;
+    float:left;
+    or
+    display-inline-block
+
+
+*/

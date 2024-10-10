@@ -1,0 +1,44 @@
+body {
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.box {
+    float: left;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: url(../../images/bg4.jpg) no-repeat left top;
+    /*
+    [background]로 사용하면 세 가지 속성을 모두 줄 수 있다.
+    background-img
+    background-repeat
+    background-position */
+}
+
+#bg1 {
+    background-size: auto ;
+}
+
+#bg2 {
+    background-size: 200px;
+}
+
+#bg3 {
+    background-size: 50%;
+}
+
+#bg4 {
+    background-size: 100% 100% ;
+    /* background-size: 150px 150px; */
+}
+
+#bg5 {
+    background-size: contain;
+    /* 이미지 가로 크기에 맞춤 */
+}
+
+#bg6 {
+    background-size: cover;
+}

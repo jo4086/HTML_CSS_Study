@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 80%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        background-color: #eee;
+        border: 1px solid #222;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        height: 60px;
+        margin: 5px;
+        background-color: #222;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+    }
+
+    /* .grow-1 {
+        flex-grow: 1;
+    }
+    .grow-2 {
+        flex-grow: 2;
+    }
+    .grow-3 {
+        flex-grow: 3;
+    } */
+    .container {
+        flex-grow: 1 2 1;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box grow-1">
+            <p>1</p>
+        </div>
+        <div class="box grow-2">
+            <p>2</p>
+        </div>
+        <div class="box grow-3">
+            <p>3</p>
+        </div>
+    </div>
+</body>
+
+</html>
